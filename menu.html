@@ -12,23 +12,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css?334" />
+    <script>
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+         document.getElementById("title").innerHTML = "welcome to<br><br>windchime.world,<br><br>the online home<br><br>of the<br><br>wind chime festival<br><br><div id='presence'>( you are the only one here )</div><a href='#menu' class='menu button'>( menu )</a>";
+      }
+      else {
+        document.getElementById("title").innerHTML = "world<br />wide<br />wind<br />chime<br />festival<br /><br />5.21 – 7.31.22<div id='presence'>( you are the only one here )</div><a href='#menu' class='menu button'>( menu )</a>";
+      }
+    </script>
   </head>
 
   <body class="menu">
     <div class="title slide" id="title">
-      world<br />
-      wide<br />
-      wind<br />
-      chime<br />
-      festival<br /><br />
-      5.21 – 7.31.22
-      <!-- we are *live* at 6pm PST / 9pm EST in mark beasley's portal -->
-      <div id="presence">( 5 are here )</div>
-      <a href="#menu" class="menu button">( menu )</a>
+      world<br />wide<br />wind<br />chime<br />festival<br /><br />5.21 – 7.31.22<div id='presence'>( you are the only one here )</div><a href='#menu' class='menu button'>( menu )</a>
     </div>
     <div class="menu-options slide" id="menu">
       <a href="menu-about.html">( about )</a><br /><br />
-      <a href="menu-events.html">( events )</a><br /><br />
+      <a href="menu-irl.html">( irl events )</a><br /><br />
+      <a href="menu-virtual.html">( virtual exhibition )</a><br /><br />
+      <a href="menu-subscribe.html">( subscribe )</a><br /><br />
       <a href="menu-support.html">( support )</a>
       <a href="#title" class="menu">( x )</a>
     </div>
