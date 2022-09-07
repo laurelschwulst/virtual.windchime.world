@@ -297,7 +297,8 @@ a.return {
   font-family: "waxwing-2020" !important;
   font-size: 1rem;
   margin-top: 25px;
-  content: "this stream could not be loaded right now" !important;
+  content: "";
+  /* content: "this stream could not be loaded right now" !important; */
 }
 .vjs-loading-spinner {
   opacity: 1 !important;
@@ -315,7 +316,8 @@ a.return {
 
   background-color: transparent !important;
   border-color: transparent !important;
-  content: "✺" !important;
+  /* content: "✺" !important; */
+  content: "" !important;
   font-weight: 0 !important;
   color: var(--spinner-color);
   display: flex;
@@ -335,4 +337,11 @@ wc-marquee {
 
 #mobile {
   font-size: 10px;
+}
+
+/* overrides for loader not showing */
+
+.video-js .vjs-modal-dialog,
+.vjs-modal-dialog {
+  background: transparent !important;
 }
